@@ -27,7 +27,7 @@ btn_avancar.click()
 
 form_origem = browser.find_element_by_id('origem')
 form_destino = browser.find_element_by_id('destino')
-rss_calcular = WebDriverWait(browser, 60).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#btn-calcular')))
+rss_calcular = WebDriverWait(browser, 60).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#rss-calcular')))
 
 form_origem.send_keys('Goiânia / GO')
 form_destino.send_keys('Brasília / DF')
