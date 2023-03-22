@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
+_____________
 
 kl_name = "Traço_Roteiros.xlsx"
 path = ""
@@ -79,3 +79,4 @@ for row in df.itertuples():
 csv_name = 'RoteirizacaoQualp_' + ws_name + '_' + datetime.now().strftime("%Y_%m_%d_%H%M%S") + '.txt'
 df.to_csv(path + csv_name, columns=['Eixos;Distância;Pedágio;Tempo'], index=False)
 browser.quit()
+__________________
